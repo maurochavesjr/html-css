@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -22,16 +26,25 @@
     <main>
         <article>
             <h2>Testando Media Query</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quaerat nulla vel, commodi ea deserunt, laudantium dicta ratione corporis, explicabo id provident impedit quas molestiae voluptates animi perspiciatis. Tenetur, accusamus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quaerat nulla vel, commodi ea deserunt, laudantium dicta ratione corporis, explicabo id provident impedit quas molestiae voluptates animi perspiciatis. Tenetur, accusamus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quia odit labore voluptates sequi aut, perferendis, doloremque accusamus amet veritatis cupiditate et? Blanditiis voluptates est nihil et voluptatem dolores exercitationem.</p>
 
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem similique maxime repudiandae optio quibusdam voluptatum ullam itaque illum, dolores illo dolor ex qui obcaecati unde sunt sapiente voluptatibus ad eos?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem similique maxime repudiandae optio quibusdam voluptatum ullam itaque illum, dolores illo dolor ex qui obcaecati unde sunt sapiente voluptatibus ad eos?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores delectus architecto ut necessitatibus quas vitae pariatur magnam fugiat? Praesentium eveniet quae eaque ad temporibus tempora dolorem laboriosam corporis rerum suscipit.
             </p>
 
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquam veritatis officia in, recusandae magni voluptate quam ipsa, natus voluptates corporis atque fugiat. Vitae soluta asperiores repudiandae ea totam perferendis!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquam veritatis officia in, recusandae magni voluptate quam ipsa, natus voluptates corporis atque fugiat. Vitae soluta asperiores repudiandae ea totam perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, vitae. Architecto sunt cumque deserunt quasi blanditiis quod perferendis accusamus, cum ut optio recusandae, quia repellat, ducimus expedita? Neque, tempore labore?
             </p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if(itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
